@@ -48,3 +48,48 @@ body{
     color: #92203f;
     cursor: pointer;
 }
+
+.password-checklist{
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #ef547f;
+}
+
+.checklist-title{
+    color: #922037;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.checklist{
+    list-style-type: none;
+    
+}
+
+.list-item{
+    padding-left: 30px;
+    color: #ffff;
+    font-size: 14px;
+}
+
+.list-item::before{
+    content: '\f00d';
+    font-family: FontAwesome;
+    display: inline-block;
+    margin: 8px 0;
+    margin-left: -30px;
+    width: 20px;
+    font-size: 12px;
+}
+
+.list-item.checked{
+    opacity: 0.5;
+}
+
+.list-item.checked::before{
+    content: '\f00c';
+    font-family: FontAwesome;
+    color: #922037;
+}
